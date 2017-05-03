@@ -9,9 +9,14 @@ var ReactDOM = require('react-dom');
 
 // module.exports = Button;
 
-const element = <h2>My button will go here (or at least in this div)</h2>
+function buttonFunction(){
+    alert('Hello world!');
+}
+
+const button = <button type="button" onClick={buttonFunction}>Click Me!</button>;
+// <h2>My button will go here (or at least in this {'<div>'})</h2>
 
 
     
-module.exports = element;
+module.exports = button;
 
