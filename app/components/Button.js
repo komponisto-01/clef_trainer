@@ -1,5 +1,6 @@
 var React = require('react');
 var ReactDOM = require('react-dom');
+// var TextFunction = require('./components/Text');
 
 // function Button(props){
 //     return (
@@ -11,6 +12,7 @@ var ReactDOM = require('react-dom');
 
 function buttonFunction(){
     alert('Hello world!');
+    // return <Text />;
 }
 
 const button = <button type="button" onClick={buttonFunction}>Click Me!</button>;

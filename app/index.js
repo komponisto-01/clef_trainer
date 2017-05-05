@@ -2,8 +2,8 @@ var React = require('react');
 var ReactDOM = require('react-dom');
 var App = require('./components/App');
 // var Button = require('./components/Button');
-var button = require('./components/Button');
-var text = require('./components/Text');
+// var button = require('./components/Button');
+// var Text = require('./components/Text');
 
     
 // ReactDOM.render(
@@ -19,13 +19,17 @@ var text = require('./components/Text');
 // const element = <h2>My button will go here (or at least in this div)</h2>;
     
 
-    
 ReactDOM.render(
-    button,
-    document.getElementById('button')
+    <App />,
+    document.getElementById('root')
 );
+    
+// ReactDOM.render(
+//     button,
+//     document.getElementById('button')
+// );
 
-ReactDOM.render(
-    text,
-    document.getElementById('text')
-    );
+// ReactDOM.render(
+//     <Text />,
+//     document.getElementById('text')
+//     );
