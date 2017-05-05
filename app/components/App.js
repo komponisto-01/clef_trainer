@@ -10,11 +10,16 @@ var Text = require('./Text');
 // };
 
 function toggleState(){
+    
     if (this.state == 0){
         this.state = 1;
 }
     else {this.state = 0}
-    alert(this.state);
+    // alert(this.state);
+    ReactDOM.render(
+    <Text state={this.state} />,
+    document.getElementById('text')
+    );    
 }
 
 function App(props){
@@ -23,10 +28,10 @@ function App(props){
     <Button onClick={toggleState}/>,
     document.getElementById('button')
 );
-    ReactDOM.render(
-    <Text />,
-    document.getElementById('text')
-    );
+    // ReactDOM.render(
+    // <Text state={this.state} />,
+    // document.getElementById('text')
+    // );
 }
 
 module.exports = App;
