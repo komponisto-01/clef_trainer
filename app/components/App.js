@@ -1,6 +1,6 @@
 var React = require('react');
 var ReactDOM = require('react-dom');
-var button = require('./Button');
+var Button = require('./Button');
 var Text = require('./Text');
 
 // function App(props){
@@ -9,10 +9,18 @@ var Text = require('./Text');
 //         );
 // };
 
+function toggleState(){
+    if (this.state == 0){
+        this.state = 1;
+}
+    else {this.state = 0}
+    alert(this.state);
+}
 
 function App(props){
+    this.state = 0;
     ReactDOM.render(
-    button,
+    <Button onClick={toggleState}/>,
     document.getElementById('button')
 );
     ReactDOM.render(

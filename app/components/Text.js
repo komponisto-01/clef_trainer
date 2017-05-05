@@ -3,8 +3,8 @@ var ReactDOM = require('react-dom');
 
 const text = <h2>My text will go here (or at least in this {'<div>'})</h2>;
 
-function TextFunction(){
+function Text(){
     return text;
 };
 
-module.exports = TextFunction;
+module.exports = Text;
