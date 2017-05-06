@@ -2,6 +2,7 @@ var React = require('react');
 var ReactDOM = require('react-dom');
 var Button = require('./Button');
 var Text = require('./Text');
+var Converter = require('./Converter');
 
 
 function toggleState(){
@@ -21,6 +22,10 @@ function App(props){
     <Button onClick={toggleState}/>,
     document.getElementById('button')
     );
+    ReactDOM.render(
+        <Converter />,
+        document.getElementById('converter')
+        );
     }
 
 module.exports = App;
