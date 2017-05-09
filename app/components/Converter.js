@@ -121,36 +121,59 @@ function trebleToSubBass(position){
 
 //This function (chooses and) applies the appropriate conversion function:
 
-function conversionFunction() {}
+// function conversionFunction() {
+//     position = position + 1;
+// }
 
 //This function returns a random clef position:
 
-function randomPosition (){
-    return Math.floor(Math.random()*22);
-}
+// function randomPosition (){
+//     return Math.floor(Math.random()*22);
+// }
 
-function displayRandomPosition() {
-    ReactDOM.render(<h2>{randomPosition()}</h2>,
-    document.getElementById('position_display')
-    );
-}
+// function displayRandomPosition() {
+//     ReactDOM.render(<h2>{randomPosition()}</h2>,
+//     document.getElementById('position_display')
+//     );
+// }
 //The get-position button subcomponent:
 
-function PositionButton(props){
-    return <Button onClick={displayRandomPosition} />;
-}
+// function PositionButton(props){
+//     return <Button onClick={displayRandomPosition} />;
+// }
 
 //The convert button subcomponent:
 
-function ConvertButton(props){
-    return <Button onClick={conversionFunction} />;
-}
+// function ConvertButton(props){
+//     return <Button onClick={conversionFunction} />;
+// }
 
 
 //The converter component:
 
 function Converter(props){
-        return <PositionButton />;
+    var position;
+    function conversionFunction() {
+    position = position + 1;
+    }
+    function randomPosition (){
+        return Math.floor(Math.random()*22);
+    }
+    function displayRandomPosition() {
+        ReactDOM.render(<h2>{randomPosition()}</h2>,
+        document.getElementById('position_display')
+        );  
+    }
+    function PositionButton(props){
+        return <Button onClick={displayRandomPosition} />;
+    }
+    function ConvertButton(props){
+        return <Button onClick={conversionFunction} />;
+    }    
+        return <div>
+        <PositionButton /> 
+        <ConvertButton />
+        </div> ;
 }
 
 module.exports = Converter;
