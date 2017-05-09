@@ -148,22 +148,35 @@ function trebleToSubBass(position){
 //     return <Button onClick={conversionFunction} />;
 // }
 
-
 //The converter component:
 
 function Converter(props){
     var position;
+    var converted_position;
+    
+    function getPosition(){
+        return position;
+    }
+    function getConvertedPosition(){
+        return converted_position;
+    }
     function conversionFunction() {
-    position = position + 1;
+    converted_position = position + 1;
+        ReactDOM.render(<h2>{getConvertedPosition()}</h2>,
+        document.getElementById('conversion_display')
+        );  
     }
     function randomPosition (){
-        return Math.floor(Math.random()*22);
+        position = Math.floor(Math.random()*22);
+        return position;
     }
     function displayRandomPosition() {
-        ReactDOM.render(<h2>{randomPosition()}</h2>,
+        randomPosition();
+        ReactDOM.render(<h2>{getPosition()}</h2>,
         document.getElementById('position_display')
         );  
     }
+    
     function PositionButton(props){
         return <Button onClick={displayRandomPosition} />;
     }
