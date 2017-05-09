@@ -149,6 +149,9 @@ function Converter(props){
         ReactDOM.render(<h2>{getPosition()}</h2>,
         document.getElementById('position_display')
         );  
+        ReactDOM.render(<h2>{' '}</h2>,
+        document.getElementById('conversion_display')
+        );
     }
     //The get-position button subcomponent:
     function PositionButton(props){
