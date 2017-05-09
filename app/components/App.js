@@ -23,7 +23,7 @@ function App(props){
     document.getElementById('button')
     );
     ReactDOM.render(
-        <Converter />,
+        <Converter known={'treble'} target={'bass'} />,
         document.getElementById('converter')
         );
     }

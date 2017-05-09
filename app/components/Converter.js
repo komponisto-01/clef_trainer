@@ -37,6 +37,11 @@ var bass = ["a,,","b,,","c,", "d,", "e,", "f,", "g,", "a,", "b,","c","d", "e",
 var subBass = ["f,,", "g,,", "a,,","b,,","c,", "d,", "e,", "f,", "g,", 
 "a,", "b,","c","d", "e", "f", "g", "a", "b", "c'", "d'", "e'"];
 
+var getClef = {frenchViolin:frenchViolin, treble:treble, soprano:soprano,
+    mezzoSoprano:mezzoSoprano, alto:alto, tenor:tenor, cBaritone:cBaritone,
+    fBaritone:fBaritone, bass:bass, subBass:subBass};
+
+
 // These functions convert positions in a given clef to the corresponding 
 //position in the treble clef:
 
@@ -125,6 +130,13 @@ function Converter(props){
     var position;
     var converted_position;
     
+    function getTargetClef(){
+        return getClef[props.target];
+    }
+    
+    function getKnownClef(){
+        return getClef[props.known];
+    }
     function getPosition(){
         return position;
     }
@@ -134,7 +146,7 @@ function Converter(props){
     //This function (chooses and?) applies the appropriate conversion function:
     function conversionFunction() {
     converted_position = position;
-        ReactDOM.render(<h2>{treble[getConvertedPosition()]}</h2>,
+        ReactDOM.render(<h2>{getKnownClef()[getConvertedPosition()]}</h2>,
         document.getElementById('conversion_display')
         );  
     }
@@ -146,7 +158,7 @@ function Converter(props){
     
     function displayRandomPosition() {
         randomPosition();
-        ReactDOM.render(<h2>{bass[getPosition()]}</h2>,
+        ReactDOM.render(<h2>{getTargetClef()[getPosition()]}</h2>,
         document.getElementById('position_display')
         );  
         ReactDOM.render(<h2>{' '}</h2>,
