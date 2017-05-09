@@ -40,84 +40,84 @@ var subBass = ["f,,", "g,,", "a,,","b,,","c,", "d,", "e,", "f,", "g,",
 // These functions convert positions in a given clef to the corresponding 
 //position in the treble clef:
 
-function frenchViolinToTreble(position){
-    return position + 2;
-};
+// function frenchViolinToTreble(position){
+//     return position + 2;
+// };
 
-function trebleToTreble(position){
-    return position;
-};
+// function trebleToTreble(position){
+//     return position;
+// };
 
-function sopranoToTreble(position){
-    return position - 2;
-};
+// function sopranoToTreble(position){
+//     return position - 2;
+// };
 
-function mezzoSopranoToTreble(position){
-    return position - 4;
-};
+// function mezzoSopranoToTreble(position){
+//     return position - 4;
+// };
 
-function altoToTreble(position){
-    return position + 1;
-};
+// function altoToTreble(position){
+//     return position + 1;
+// };
 
-function tenorToTreble(position){
-    return position - 1;
-};
+// function tenorToTreble(position){
+//     return position - 1;
+// };
 
-function cBaritoneToTreble(position){
-    return position - 3;
-};
+// function cBaritoneToTreble(position){
+//     return position - 3;
+// };
 
-function fBaritoneToTreble(position){
-    return position -3;
-};
+// function fBaritoneToTreble(position){
+//     return position -3;
+// };
 
-function bassToTreble(position){
-    return position + 2;
-};
+// function bassToTreble(position){
+//     return position + 2;
+// };
 
-function subBassToTreble(position){
-    return position;
-};
+// function subBassToTreble(position){
+//     return position;
+// };
 
 //These functions convert positions in the treble clef to corresponding 
 //positions in other clefs:
 
-function trebleToFrenchViolin(position){
-    return position - 2;
-};
+// function trebleToFrenchViolin(position){
+//     return position - 2;
+// };
 
-function trebleToSoprano(position){
-    return position + 2;
-};
+// function trebleToSoprano(position){
+//     return position + 2;
+// };
 
-function trebleToMezzoSoprano(position){
-    return position + 4;
-};
+// function trebleToMezzoSoprano(position){
+//     return position + 4;
+// };
 
-function trebleToAlto(position){
-    return position - 1;
-};
+// function trebleToAlto(position){
+//     return position - 1;
+// };
 
-function trebleToTenor(position){
-    return position + 1;
-};
+// function trebleToTenor(position){
+//     return position + 1;
+// };
 
-function trebleToCBaritone(position){
-    return position + 3;
-};
+// function trebleToCBaritone(position){
+//     return position + 3;
+// };
 
-function trebleToFBaritone(position){
-    return position + 3;
-};
+// function trebleToFBaritone(position){
+//     return position + 3;
+// };
 
-function trebleToBass(position){
-    return position -2;
-};
+// function trebleToBass(position){
+//     return position -2;
+// };
 
-function trebleToSubBass(position){
-    return position;
-};
+// function trebleToSubBass(position){
+//     return position;
+// };
 
 //The converter component:
 
@@ -133,8 +133,8 @@ function Converter(props){
     }
     //This function (chooses and?) applies the appropriate conversion function:
     function conversionFunction() {
-    converted_position = position + 1;
-        ReactDOM.render(<h2>{getConvertedPosition()}</h2>,
+    converted_position = position;
+        ReactDOM.render(<h2>{treble[getConvertedPosition()]}</h2>,
         document.getElementById('conversion_display')
         );  
     }
@@ -146,7 +146,7 @@ function Converter(props){
     
     function displayRandomPosition() {
         randomPosition();
-        ReactDOM.render(<h2>{getPosition()}</h2>,
+        ReactDOM.render(<h2>{bass[getPosition()]}</h2>,
         document.getElementById('position_display')
         );  
         ReactDOM.render(<h2>{' '}</h2>,
