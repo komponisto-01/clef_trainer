@@ -3,6 +3,7 @@ var ReactDOM = require('react-dom');
 var Button = require('./Button');
 var Text = require('./Text');
 var Converter = require('./Converter');
+var Selector = require('./Selector');
 
 
 function toggleState(){
@@ -18,12 +19,20 @@ function toggleState(){
 
 function App(props){
     this.state = 0;
+    var known = 'treble';
+    var target =  'bass';
+    var options = ['frenchViolin', 'treble', 'soprano', 'mezzoSoprano', 
+    'alto', 'tenor', 'cBaritone', 'fBaritone', 'bass', 'subBass'];
+    ReactDOM.render(
+        <Selector.Selector />,
+        document.getElementById('selector')
+        );
     ReactDOM.render(
     <Button onClick={toggleState}/>,
     document.getElementById('button')
     );
     ReactDOM.render(
-        <Converter known={'treble'} target={'bass'} />,
+        <Converter known={known} target={target} />,
         document.getElementById('converter')
         );
     }

@@ -5,6 +5,7 @@ var Button = require('./Button');
 
 // Clefs are arrays of pitches: they take an integer (representing staff
 // position) and output a pitch.
+// (The entries representing pitches will be replaced by images to be rendered.)
 
 var frenchViolin = ["a", "b", "c'", "d'", "e'", "f'", "g'", "a'", "b'", 
     "c''", "d''", "e''", "f''", "g''", "a''", "b''", "c''", "d'''", "e'''", 
