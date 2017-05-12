@@ -125,6 +125,8 @@ function trebleToSubBass(position){
     return position;
 };
 
+
+
 //The converter component:
 
 function Converter(props){
@@ -153,7 +155,7 @@ function Converter(props){
     }
     //This function returns a random clef position:
     function randomPosition (){
-        position = Math.floor(Math.random()*22);
+        position = Math.floor(4 + Math.random()*12);
         return position;
     }
     
