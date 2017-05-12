@@ -46,84 +46,84 @@ var getClef = {frenchViolin:frenchViolin, treble:treble, soprano:soprano,
 // These functions convert positions in a given clef to the corresponding 
 //position in the treble clef:
 
-// function frenchViolinToTreble(position){
-//     return position + 2;
-// };
+function frenchViolinToTreble(position){
+    return position + 2;
+};
 
-// function trebleToTreble(position){
-//     return position;
-// };
+function trebleToTreble(position){
+    return position;
+};
 
-// function sopranoToTreble(position){
-//     return position - 2;
-// };
+function sopranoToTreble(position){
+    return position - 2;
+};
 
-// function mezzoSopranoToTreble(position){
-//     return position - 4;
-// };
+function mezzoSopranoToTreble(position){
+    return position - 4;
+};
 
-// function altoToTreble(position){
-//     return position + 1;
-// };
+function altoToTreble(position){
+    return position + 1;
+};
 
-// function tenorToTreble(position){
-//     return position - 1;
-// };
+function tenorToTreble(position){
+    return position - 1;
+};
 
-// function cBaritoneToTreble(position){
-//     return position - 3;
-// };
+function cBaritoneToTreble(position){
+    return position - 3;
+};
 
-// function fBaritoneToTreble(position){
-//     return position -3;
-// };
+function fBaritoneToTreble(position){
+    return position -3;
+};
 
-// function bassToTreble(position){
-//     return position + 2;
-// };
+function bassToTreble(position){
+    return position + 2;
+};
 
-// function subBassToTreble(position){
-//     return position;
-// };
+function subBassToTreble(position){
+    return position;
+};
 
-//These functions convert positions in the treble clef to corresponding 
-//positions in other clefs:
+// These functions convert positions in the treble clef to corresponding 
+// positions in other clefs:
 
-// function trebleToFrenchViolin(position){
-//     return position - 2;
-// };
+function trebleToFrenchViolin(position){
+    return position - 2;
+};
 
-// function trebleToSoprano(position){
-//     return position + 2;
-// };
+function trebleToSoprano(position){
+    return position + 2;
+};
 
-// function trebleToMezzoSoprano(position){
-//     return position + 4;
-// };
+function trebleToMezzoSoprano(position){
+    return position + 4;
+};
 
-// function trebleToAlto(position){
-//     return position - 1;
-// };
+function trebleToAlto(position){
+    return position - 1;
+};
 
-// function trebleToTenor(position){
-//     return position + 1;
-// };
+function trebleToTenor(position){
+    return position + 1;
+};
 
-// function trebleToCBaritone(position){
-//     return position + 3;
-// };
+function trebleToCBaritone(position){
+    return position + 3;
+};
 
-// function trebleToFBaritone(position){
-//     return position + 3;
-// };
+function trebleToFBaritone(position){
+    return position + 3;
+};
 
-// function trebleToBass(position){
-//     return position -2;
-// };
+function trebleToBass(position){
+    return position -2;
+};
 
-// function trebleToSubBass(position){
-//     return position;
-// };
+function trebleToSubBass(position){
+    return position;
+};
 
 //The converter component:
 
@@ -146,7 +146,7 @@ function Converter(props){
     }
     //This function (chooses and?) applies the appropriate conversion function:
     function conversionFunction() {
-    converted_position = position;
+    converted_position = bassToTreble(position);
         ReactDOM.render(<h2>{getKnownClef()[getConvertedPosition()]}</h2>,
         document.getElementById('conversion_display')
         );  
