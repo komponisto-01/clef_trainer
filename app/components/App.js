@@ -19,8 +19,8 @@ function toggleState(){
 
 function App(props){
     this.state = 0;
-    var known = 'treble';
-    var target =  'bass';
+    var known = Selector.known;
+    var target =  Selector.target;
     var options = ['frenchViolin', 'treble', 'soprano', 'mezzoSoprano', 
     'alto', 'tenor', 'cBaritone', 'fBaritone', 'bass', 'subBass'];
     ReactDOM.render(
@@ -31,10 +31,10 @@ function App(props){
     <Button onClick={toggleState}/>,
     document.getElementById('button')
     );
-    ReactDOM.render(
-        <Converter known={known} target={target} />,
-        document.getElementById('converter')
-        );
+    // ReactDOM.render(
+    //     <Converter known={known} target={target} />,
+    //     document.getElementById('converter')
+    //     );
     }
 
 module.exports = App;
