@@ -42,7 +42,10 @@ function targetSubBass(){
     target = 'subBass';
 }
 
-function knownFrenchViolin(){}
+function knownFrenchViolin(){
+    known = 'frenchViolin';
+    renderConverter();
+}
 function knownTreble(){
     known = 'treble';
     alert("known = treble");
@@ -50,27 +53,35 @@ function knownTreble(){
 }
 function knownSoprano(){
     known = 'soprano';
+    renderConverter();
 }
 function knownMezzoSoprano(){
     known = 'mezzoSoprano';
+    renderConverter();
 }
 function knownAlto(){
     known = 'alto';
+    renderConverter();
 }
 function knownTenor(){
     known = 'tenor';
+    renderConverter();
 }
 function knownCBaritone(){
     known = 'cBaritone';
+    renderConverter();
 }
 function knownFBaritone(){
     known = 'fBaritone';
+    renderConverter();
 }
 function knownBass(){
     known = 'bass';
+    renderConverter();
 }
 function knownSubBass(){
     known = 'subBass';
+    renderConverter();
 }
 
 function renderConverter(){
@@ -81,11 +92,65 @@ function renderConverter(){
 }
 
 function displayMenu(){
-    ReactDOM.render(<a href="#" onClick={targetBass}>Target</a>,
-    document.getElementById('dropdown1')
+    ReactDOM.render(<a href="#" onClick={targetFrenchViolin}>targetFrenchViolin
+    </a>, document.getElementById('target_dropdown1')
     );
-    ReactDOM.render(<a href="#" onClick={knownTreble}>Known</a>,
-    document.getElementById('dropdown2')
+    ReactDOM.render(<a href="#" onClick={targetTreble}>targetTreble</a>,
+    document.getElementById('target_dropdown2')
+    );
+    ReactDOM.render(<a href="#" onClick={targetSoprano}>targetSoprano</a>,
+    document.getElementById('target_dropdown3')
+    );
+    ReactDOM.render(<a href="#" onClick={targetMezzoSoprano}>targetMezzoSoprano</a>,
+    document.getElementById('target_dropdown4')
+    );
+    ReactDOM.render(<a href="#" onClick={targetAlto}>targetAlto</a>,
+    document.getElementById('target_dropdown5')
+    );
+    ReactDOM.render(<a href="#" onClick={targetTenor}>targetTenor</a>,
+    document.getElementById('target_dropdown6')
+    );
+    ReactDOM.render(<a href="#" onClick={targetCBaritone}>targetCBaritone</a>,
+    document.getElementById('target_dropdown7')
+    );    
+    ReactDOM.render(<a href="#" onClick={targetFBaritone}>targetFBaritone</a>,
+    document.getElementById('target_dropdown8')
+    );    
+    ReactDOM.render(<a href="#" onClick={targetBass}>targetBass</a>,
+    document.getElementById('target_dropdown9')
+    );
+    ReactDOM.render(<a href="#" onClick={targetSubBass}>targetSubBass</a>,
+    document.getElementById('target_dropdown10')
+    );    
+    ReactDOM.render(<a href="#" onClick={knownFrenchViolin}>knownFrenchViolin</a>,
+    document.getElementById('known_dropdown1')
+    );
+    ReactDOM.render(<a href="#" onClick={knownTreble}>knownTreble</a>,
+    document.getElementById('known_dropdown2')
+    );
+    ReactDOM.render(<a href="#" onClick={knownSoprano}>knownSoprano</a>,
+    document.getElementById('known_dropdown3')
+    );
+    ReactDOM.render(<a href="#" onClick={knownMezzoSoprano}>knownMezzoSoprano</a>,
+    document.getElementById('known_dropdown4')
+    );
+    ReactDOM.render(<a href="#" onClick={knownAlto}>knownAlto</a>,
+    document.getElementById('known_dropdown5')
+    );
+    ReactDOM.render(<a href="#" onClick={knownTenor}>knownTenor</a>,
+    document.getElementById('known_dropdown6')
+    );
+    ReactDOM.render(<a href="#" onClick={knownCBaritone}>knownCBaritone</a>,
+    document.getElementById('known_dropdown7')
+    );
+    ReactDOM.render(<a href="#" onClick={knownFBaritone}>knownFBaritone</a>,
+    document.getElementById('known_dropdown8')
+    );
+    ReactDOM.render(<a href="#" onClick={knownBass}>knownBass</a>,
+    document.getElementById('known_dropdown9')
+    );
+    ReactDOM.render(<a href="#" onClick={knownSubBass}>knownSubBass</a>,
+    document.getElementById('known_dropdown10')
     );
 }
 
