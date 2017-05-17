@@ -3,9 +3,6 @@ var ReactDOM = require('react-dom');
 var Button = require('./Button');
 var Converter = require("./Converter");
 
-// function hello(){
-//     alert('hello world!');
-// };
 
 var target;
 var known;

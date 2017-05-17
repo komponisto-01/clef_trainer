@@ -31,10 +31,6 @@ function App(props){
     <Button onClick={toggleState}/>,
     document.getElementById('button')
     );
-    // ReactDOM.render(
-    //     <Converter known={known} target={target} />,
-    //     document.getElementById('converter')
-    //     );
     }
 
 module.exports = App;

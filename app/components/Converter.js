@@ -199,6 +199,12 @@ function Converter(props){
     function convert() {
         treble_position = getTrebleFunction()(position);
         converted_position = getConversionFunction()(treble_position);
+        if (converted_position - position > 4){
+            converted_position = converted_position - 7;
+        }
+        else if (converted_position - position < -4){
+            converted_position = converted_position + 7;
+        }
         ReactDOM.render(<h2>{getKnownClef()[getConvertedPosition()]}</h2>,
         document.getElementById('conversion_display')
         );  
