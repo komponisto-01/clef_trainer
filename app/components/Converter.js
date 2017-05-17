@@ -38,9 +38,18 @@ var bass = ["a,,","b,,","c,", "d,", "e,", "f,", "g,", "a,", "b,","c","d", "e",
 var subBass = ["f,,", "g,,", "a,,","b,,","c,", "d,", "e,", "f,", "g,", 
 "a,", "b,","c","d", "e", "f", "g", "a", "b", "c'", "d'", "e'"];
 
-var getClef = {frenchViolin:frenchViolin, treble:treble, soprano:soprano,
-    mezzoSoprano:mezzoSoprano, alto:alto, tenor:tenor, cBaritone:cBaritone,
-    fBaritone:fBaritone, bass:bass, subBass:subBass};
+var getClef = {
+    frenchViolin: frenchViolin,
+    treble: treble,
+    soprano: soprano,
+    mezzoSoprano: mezzoSoprano,
+    alto: alto,
+    tenor: tenor,
+    cBaritone: cBaritone,
+    fBaritone: fBaritone,
+    bass: bass,
+    subBass: subBass
+};
 
 
 // These functions convert positions in a given clef to the corresponding 
@@ -125,12 +134,41 @@ function trebleToSubBass(position){
     return position;
 };
 
+function identity(arg){
+    return arg
+}
 
+var convertClefToTreble = {
+    frenchViolin: frenchViolinToTreble,
+    treble: identity,
+    soprano: sopranoToTreble, 
+    mezzoSoprano: mezzoSopranoToTreble,
+    alto: altoToTreble, 
+    tenor: tenorToTreble, 
+    cBaritone: cBaritoneToTreble, 
+    fBaritone: fBaritoneToTreble, 
+    bass: bassToTreble, 
+    subBass: subBassToTreble
+};
+
+var convertTrebleToClef = {
+    frenchViolin: trebleToFrenchViolin,
+    treble: identity,
+    soprano: trebleToSoprano,
+    mezzoSoprano: trebleToMezzoSoprano,
+    alto: trebleToAlto,
+    tenor: trebleToTenor,
+    cBaritone: trebleToCBaritone,
+    fBaritone: trebleToFBaritone,
+    bass: trebleToBass,
+    subBass: trebleToSubBass
+    };
 
 //The converter component:
 
 function Converter(props){
     var position;
+    var treble_position;
     var converted_position;
     
     function getTargetClef(){
@@ -146,9 +184,21 @@ function Converter(props){
     function getConvertedPosition(){
         return converted_position;
     }
-    //This function (chooses and?) applies the appropriate conversion function:
-    function conversionFunction() {
-    converted_position = bassToTreble(position);
+    
+    
+    function getTrebleFunction(){
+        return convertClefToTreble[props.target];
+    }
+    
+    function getConversionFunction(){
+        return convertTrebleToClef[props.known];
+        
+    }
+    
+    //This function applies the appropriate conversion function:
+    function convert() {
+        treble_position = getTrebleFunction()(position);
+        converted_position = getConversionFunction()(treble_position);
         ReactDOM.render(<h2>{getKnownClef()[getConvertedPosition()]}</h2>,
         document.getElementById('conversion_display')
         );  
@@ -174,7 +224,7 @@ function Converter(props){
     }
     //The convert button subcomponent:
     function ConvertButton(props){
-        return <Button onClick={conversionFunction} />;
+        return <Button onClick={convert} />;
     }    
         return <div>
         <PositionButton /> 
