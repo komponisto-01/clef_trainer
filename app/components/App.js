@@ -20,11 +20,12 @@ function toggleState(){
 function showImage(){
     // alert("showImage!");
     ReactDOM.render(
-        <img src="./app/images/treble/treble_C4.png" height="140" width="250" />,
+        myArray[0],
         document.getElementById('image3')
         );
 };
 
+var myArray =[<img src="./app/images/treble/treble_C4.png" height="140" width="250" />];
 
 function App(props){
     this.state = 0;
