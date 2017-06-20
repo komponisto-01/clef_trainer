@@ -17,6 +17,16 @@ function toggleState(){
     );    
     }
 
+function showImage(){
+    // alert("showImage!");
+    ReactDOM.render(
+        myArray[0],
+        document.getElementById('image3')
+        );
+};
+
+var myArray =[<img src="./app/images/treble/treble_C4.png" height="140" width="250" />];
+
 function App(props){
     this.state = 0;
     var known = Selector.known;
@@ -31,6 +41,10 @@ function App(props){
     <Button onClick={toggleState}/>,
     document.getElementById('button')
     );
+    ReactDOM.render(
+    <Button onClick={showImage}/>,
+    document.getElementById('image_button')
+        );
     }
 
 module.exports = App;
