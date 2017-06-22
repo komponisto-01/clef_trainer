@@ -2,7 +2,29 @@ var React = require('react');
 var ReactDOM = require('react-dom');
 var Button = require('./Button');
 
-//Storing image links in variables, for brevity.
+//Storing image links (or rather, image-link-objects) in variables, for brevity.
+
+var french_violinA3 = <img src="./app/images/french_violin/french_violinA3.png"  />;
+var french_violinB3 = <img src="./app/images/french_violin/french_violinB3.png"  />;
+var french_violinC4 = <img src="./app/images/french_violin/french_violinC4.png"  />;
+var french_violinD4 = <img src="./app/images/french_violin/french_violinD4.png"  />;
+var french_violinE4 = <img src="./app/images/french_violin/french_violinE4.png"  />;
+var french_violinF4 = <img src="./app/images/french_violin/french_violinF4.png"  />;
+var french_violinG4 = <img src="./app/images/french_violin/french_violinG4.png"  />;
+var french_violinA4 = <img src="./app/images/french_violin/french_violinA4.png"  />;
+var french_violinB4 = <img src="./app/images/french_violin/french_violinB4.png"  />;
+var french_violinC5 = <img src="./app/images/french_violin/french_violinC5.png"  />;
+var french_violinD5 = <img src="./app/images/french_violin/french_violinD5.png"  />;
+var french_violinE5 = <img src="./app/images/french_violin/french_violinE5.png"  />;
+var french_violinF5 = <img src="./app/images/french_violin/french_violinF5.png"  />;
+var french_violinG5 = <img src="./app/images/french_violin/french_violinG5.png"  />;
+var french_violinA5 = <img src="./app/images/french_violin/french_violinA5.png"  />;
+var french_violinB5 = <img src="./app/images/french_violin/french_violinB5.png"  />;
+var french_violinC6 = <img src="./app/images/french_violin/french_violinC6.png"  />;
+var french_violinD6 = <img src="./app/images/french_violin/french_violinD6.png"  />;
+var french_violinE6 = <img src="./app/images/french_violin/french_violinE6.png"  />;
+var french_violinF6 = <img src="./app/images/french_violin/french_violinF6.png"  />;
+var french_violinG6 = <img src="./app/images/french_violin/french_violinG6.png"  />;
 
 var trebleF3 = <img src="./app/images/treble/treble_F3.png"  />;
 var trebleG3 = <img src="./app/images/treble/treble_G3.png"  />;
@@ -52,9 +74,12 @@ var bassG4 = <img src="./app/images/bass/bass_G4.png"  />;
 // position) and output a pitch.
 // (The entries representing pitches will be replaced by images to be rendered.)
 
-var frenchViolin = ["a", "b", "c'", "d'", "e'", "f'", "g'", "a'", "b'", 
-    "c''", "d''", "e''", "f''", "g''", "a''", "b''", "c''", "d'''", "e'''", 
-    "f'''", "g'''"];
+var frenchViolin = [french_violinA3, french_violinB3, french_violinC4,
+french_violinD4, french_violinE4, french_violinF4, french_violinG4,
+french_violinA4, french_violinB4, french_violinC5, french_violinD5,
+    french_violinE5, french_violinF5, french_violinG5, french_violinA5,
+    french_violinB5, french_violinC6, french_violinD6, french_violinE6, 
+    french_violinF6, french_violinG6];
 
 var treble = [trebleF3, trebleG3, trebleA3, trebleB3, trebleC4, trebleD4, 
     trebleE4, trebleF4, trebleG4, trebleA4, trebleB4, trebleC5,
