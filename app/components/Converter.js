@@ -26,6 +26,7 @@ var french_violinE6 = <img src="./app/images/french_violin/french_violinE6.png" 
 var french_violinF6 = <img src="./app/images/french_violin/french_violinF6.png"  />;
 var french_violinG6 = <img src="./app/images/french_violin/french_violinG6.png"  />;
 
+
 var trebleF3 = <img src="./app/images/treble/treble_F3.png"  />;
 var trebleG3 = <img src="./app/images/treble/treble_G3.png"  />;
 var trebleA3 = <img src="./app/images/treble/treble_A3.png" />;
@@ -47,6 +48,29 @@ var trebleB5 = <img src="./app/images/treble/treble_B5.png"  />;
 var trebleC6 = <img src="./app/images/treble/treble_C6.png"  />;
 var trebleD6 = <img src="./app/images/treble/treble_D6.png"  />;
 var trebleE6 = <img src="./app/images/treble/treble_E6.png"  />;
+
+var sopranoD3 = <img src="./app/images/soprano/sopranoD3.png"  />;
+var sopranoE3 = <img src="./app/images/soprano/sopranoE3.png"  />;
+var sopranoF3 = <img src="./app/images/soprano/sopranoF3.png"  />;
+var sopranoG3 = <img src="./app/images/soprano/sopranoG3.png"  />;
+var sopranoA3 = <img src="./app/images/soprano/sopranoA3.png"  />;
+var sopranoB3 = <img src="./app/images/soprano/sopranoB3.png"  />;
+var sopranoC4 = <img src="./app/images/soprano/sopranoC4.png"  />;
+var sopranoD4 = <img src="./app/images/soprano/sopranoD4.png"  />;
+var sopranoE4 = <img src="./app/images/soprano/sopranoE4.png"  />;
+var sopranoF4 = <img src="./app/images/soprano/sopranoF4.png"  />;
+var sopranoG4 = <img src="./app/images/soprano/sopranoG4.png"  />;
+var sopranoA4 = <img src="./app/images/soprano/sopranoA4.png"  />;
+var sopranoB4 = <img src="./app/images/soprano/sopranoB4.png"  />;
+var sopranoC5 = <img src="./app/images/soprano/sopranoC5.png"  />;
+var sopranoD5 = <img src="./app/images/soprano/sopranoD5.png"  />;
+var sopranoE5 = <img src="./app/images/soprano/sopranoE5.png"  />;
+var sopranoF5 = <img src="./app/images/soprano/sopranoF5.png"  />;
+var sopranoG5 = <img src="./app/images/soprano/sopranoG5.png"  />;
+var sopranoA5 = <img src="./app/images/soprano/sopranoA5.png"  />;
+var sopranoB5 = <img src="./app/images/soprano/sopranoB5.png"  />;
+var sopranoC6 = <img src="./app/images/soprano/sopranoC6.png"  />;
+
 
 var bassA1 = <img src="./app/images/bass/bass_A1.png"  />;
 var bassB1 = <img src="./app/images/bass/bass_B1.png"  />;
@@ -86,8 +110,10 @@ var treble = [trebleF3, trebleG3, trebleA3, trebleB3, trebleC4, trebleD4,
      trebleD5, trebleE5, trebleF5, trebleG5, trebleA5, trebleB5, trebleC6,
      trebleD6, trebleE6];
 
-var soprano = ["d", "e", "f", "g", "a", "b", "c'", "d'", "e'", "f'", "g'",
-    "a'", "b'", "c''", "d''", "e''", "f''", "g''", "a''", "b''", "c''"];
+var soprano = [sopranoD3, sopranoE3, sopranoF3, sopranoG3, sopranoA3, sopranoB3,
+sopranoC4, sopranoD4, sopranoE4, sopranoF4, sopranoG4, sopranoA4, sopranoB4,
+sopranoC5, sopranoD5, sopranoE5, sopranoF5, sopranoG5, sopranoA5, sopranoB5,
+sopranoC6];
 
 var mezzoSoprano = ["b,","c","d", "e", "f", "g", "a", "b", "c'", "d'", 
 "e'", "f'", "g'","a'", "b'", "c''", "d''", "e''", "f''", "g''", "a''"];
