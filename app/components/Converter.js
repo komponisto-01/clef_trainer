@@ -26,7 +26,6 @@ var french_violinE6 = <img src="./app/images/french_violin/french_violinE6.png" 
 var french_violinF6 = <img src="./app/images/french_violin/french_violinF6.png"  />;
 var french_violinG6 = <img src="./app/images/french_violin/french_violinG6.png"  />;
 
-
 var trebleF3 = <img src="./app/images/treble/treble_F3.png"  />;
 var trebleG3 = <img src="./app/images/treble/treble_G3.png"  />;
 var trebleA3 = <img src="./app/images/treble/treble_A3.png" />;
@@ -108,15 +107,34 @@ var altoD4 = <img src="./app/images/alto/altoD4.png"  />;
 var altoE4 = <img src="./app/images/alto/altoE4.png"  />;
 var altoF4 = <img src="./app/images/alto/altoF4.png"  />;
 var altoG4 = <img src="./app/images/alto/altoG4.png"  />;
-var altoE4 = <img src="./app/images/alto/altoE4.png"  />;
-var altoF4 = <img src="./app/images/alto/altoF4.png"  />;
-var altoG4 = <img src="./app/images/alto/altoG4.png"  />;
 var altoA4 = <img src="./app/images/alto/altoA4.png"  />;
 var altoB4 = <img src="./app/images/alto/altoB4.png"  />;
 var altoC5 = <img src="./app/images/alto/altoC5.png"  />;
 var altoD5 = <img src="./app/images/alto/altoD5.png"  />;
 var altoE5 = <img src="./app/images/alto/altoE5.png"  />;
 var altoF5 = <img src="./app/images/alto/altoF5.png"  />;
+
+var tenorE2 = <img src="./app/images/tenor/tenorE2.png"  />;
+var tenorF2 = <img src="./app/images/tenor/tenorF2.png"  />;
+var tenorG2 = <img src="./app/images/tenor/tenorG2.png"  />;
+var tenorA2 = <img src="./app/images/tenor/tenorA2.png"  />;
+var tenorB2 = <img src="./app/images/tenor/tenorB2.png"  />;
+var tenorC3 = <img src="./app/images/tenor/tenorC3.png"  />;
+var tenorD3 = <img src="./app/images/tenor/tenorD3.png"  />;
+var tenorE3 = <img src="./app/images/tenor/tenorE3.png"  />;
+var tenorF3 = <img src="./app/images/tenor/tenorF3.png"  />;
+var tenorG3 = <img src="./app/images/tenor/tenorG3.png"  />;
+var tenorA3 = <img src="./app/images/tenor/tenorA3.png"  />;
+var tenorB3 = <img src="./app/images/tenor/tenorB3.png"  />;
+var tenorC4 = <img src="./app/images/tenor/tenorC4.png"  />;
+var tenorD4 = <img src="./app/images/tenor/tenorD4.png"  />;
+var tenorE4 = <img src="./app/images/tenor/tenorE4.png"  />;
+var tenorF4 = <img src="./app/images/tenor/tenorF4.png"  />;
+var tenorG4 = <img src="./app/images/tenor/tenorG4.png"  />;
+var tenorA4 = <img src="./app/images/tenor/tenorA4.png"  />;
+var tenorB4 = <img src="./app/images/tenor/tenorB4.png"  />;
+var tenorC5 = <img src="./app/images/tenor/tenorC5.png"  />;
+var tenorD5 = <img src="./app/images/tenor/tenorD5.png"  />;
 
 var bassA1 = <img src="./app/images/bass/bass_A1.png"  />;
 var bassB1 = <img src="./app/images/bass/bass_B1.png"  />;
@@ -172,8 +190,10 @@ var alto = [altoG2, altoA2, altoB2, altoC3, altoD3 , altoE3, altoF3, altoG3,
 altoA3, altoB3, altoC4, altoD4, 
 altoE4, altoF4, altoG4, altoA4, altoB4, altoC5, altoD5, altoE5, altoF5];
 
-var tenor = ["e,", "f,", "g,", "a,", "b,","c","d", "e", "f", "g", "a", "b",
-"c'", "d'", "e'", "f'", "g'","a'", "b'", "c''", "d''"];
+var tenor = [tenorE2, tenorF2, tenorG2, tenorA2, tenorB2, tenorC3, tenorD3,
+tenorE3, tenorF3, tenorG3, tenorA3, tenorB3,
+tenorC4, tenorD4, tenorE4, tenorF4, tenorG4, tenorA4, tenorB4, tenorC5, 
+tenorD5];
 
 var cBaritone = ["c,", "d,", "e,", "f,", "g,", "a,", "b,","c","d", "e",
 "f", "g", "a", "b", "c'", "d'", "e'", "f'", "g'","a'", "b'",];
