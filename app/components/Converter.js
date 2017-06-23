@@ -205,6 +205,28 @@ var bassE4 = <img src="./app/images/bass/bass_E4.png"  />;
 var bassF4 = <img src="./app/images/bass/bass_F4.png"  />;
 var bassG4 = <img src="./app/images/bass/bass_G4.png"  />;
 
+var subbassF1 = <img src="./app/images/subbass/subbassF1.png"  />;
+var subbassG1 = <img src="./app/images/subbass/subbassG1.png"  />;
+var subbassA1 = <img src="./app/images/subbass/subbassF1.png"  />;
+var subbassB1 = <img src="./app/images/subbass/subbassB1.png"  />;
+var subbassC2 = <img src="./app/images/subbass/subbassC2.png"  />;
+var subbassD2 = <img src="./app/images/subbass/subbassD2.png"  />;
+var subbassE2 = <img src="./app/images/subbass/subbassE2.png"  />;
+var subbassF2 = <img src="./app/images/subbass/subbassF2.png"  />;
+var subbassG2 = <img src="./app/images/subbass/subbassG2.png"  />;
+var subbassA2 = <img src="./app/images/subbass/subbassA2.png"  />;
+var subbassB2 = <img src="./app/images/subbass/subbassB2.png"  />;
+var subbassC3 = <img src="./app/images/subbass/subbassC3.png"  />;
+var subbassD3 = <img src="./app/images/subbass/subbassD3.png"  />;
+var subbassE3 = <img src="./app/images/subbass/subbassE3.png"  />;
+var subbassF3 = <img src="./app/images/subbass/subbassF3.png"  />;
+var subbassG3 = <img src="./app/images/subbass/subbassG3.png"  />;
+var subbassA3 = <img src="./app/images/subbass/subbassA3.png"  />;
+var subbassB3 = <img src="./app/images/subbass/subbassB3.png"  />;
+var subbassC4 = <img src="./app/images/subbass/subbassC4.png"  />;
+var subbassD4 = <img src="./app/images/subbass/subbassD4.png"  />;
+var subbassE4 = <img src="./app/images/subbass/subbassE4.png"  />;
+
 // Clefs are arrays of pitches: they take an integer (representing staff
 // position) and output a pitch.
 // (The entries representing pitches will be replaced by images to be rendered.)
@@ -258,8 +280,10 @@ var bass = [bassA1, bassB1, bassC2, bassD2, bassE2, bassF2, bassG2, bassA2,
     bassB2, bassC3, bassD3, bassE3, bassF3, bassG3,
     bassA3, bassB3, bassC4, bassD4, bassE4, bassF4, bassG4,];
 
-var subBass = ["f,,", "g,,", "a,,","b,,","c,", "d,", "e,", "f,", "g,", 
-"a,", "b,","c","d", "e", "f", "g", "a", "b", "c'", "d'", "e'"];
+var subBass = [subbassF1, subbassG1, subbassA1, subbassB1, subbassC2, subbassD2,
+subbassE2, subbassF2, subbassG2, 
+subbassA2, subbassB2, subbassC3, subbassD3, subbassE3, subbassF3, subbassG3,
+subbassA3, subbassB3, subbassC4, subbassD4, subbassE4];
 
 var getClef = {
     frenchViolin: frenchViolin,
