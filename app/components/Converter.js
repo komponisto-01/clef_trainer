@@ -136,6 +136,53 @@ var tenorB4 = <img src="./app/images/tenor/tenorB4.png"  />;
 var tenorC5 = <img src="./app/images/tenor/tenorC5.png"  />;
 var tenorD5 = <img src="./app/images/tenor/tenorD5.png"  />;
 
+var c_baritoneC2 = <img src="./app/images/c_baritone/c_baritoneC2.png"  />;
+var c_baritoneD2 = <img src="./app/images/c_baritone/c_baritoneD2.png"  />;
+var c_baritoneE2 = <img src="./app/images/c_baritone/c_baritoneE2.png"  />;
+var c_baritoneF2 = <img src="./app/images/c_baritone/c_baritoneF2.png"  />;
+var c_baritoneG2 = <img src="./app/images/c_baritone/c_baritoneG2.png"  />;
+var c_baritoneA2 = <img src="./app/images/c_baritone/c_baritoneA2.png"  />;
+var c_baritoneB2 = <img src="./app/images/c_baritone/c_baritoneB2.png"  />;
+var c_baritoneC3 = <img src="./app/images/c_baritone/c_baritoneC3.png"  />;
+var c_baritoneD3 = <img src="./app/images/c_baritone/c_baritoneD3.png"  />;
+var c_baritoneE3 = <img src="./app/images/c_baritone/c_baritoneE3.png"  />;
+var c_baritoneF3 = <img src="./app/images/c_baritone/c_baritoneF3.png"  />;
+var c_baritoneG3 = <img src="./app/images/c_baritone/c_baritoneG3.png"  />;
+var c_baritoneA3 = <img src="./app/images/c_baritone/c_baritoneA3.png"  />;
+var c_baritoneB3 = <img src="./app/images/c_baritone/c_baritoneB3.png"  />;
+var c_baritoneC4 = <img src="./app/images/c_baritone/c_baritoneC4.png"  />;
+var c_baritoneD4 = <img src="./app/images/c_baritone/c_baritoneD4.png"  />;
+var c_baritoneE4 = <img src="./app/images/c_baritone/c_baritoneE4.png"  />;
+var c_baritoneF4 = <img src="./app/images/c_baritone/c_baritoneF4.png"  />;
+var c_baritoneG4 = <img src="./app/images/c_baritone/c_baritoneG4.png"  />;
+var c_baritoneA4 = <img src="./app/images/c_baritone/c_baritoneA4.png"  />;
+var c_baritoneB4 = <img src="./app/images/c_baritone/c_baritoneB4.png"  />;
+
+var f_baritoneC2 = <img src="./app/images/f_baritone/f_baritoneC2.png"  />;
+var f_baritoneD2 = <img src="./app/images/f_baritone/f_baritoneD2.png"  />;
+var f_baritoneE2 = <img src="./app/images/f_baritone/f_baritoneE2.png"  />;
+var f_baritoneF2 = <img src="./app/images/f_baritone/f_baritoneF2.png"  />;
+var f_baritoneG2 = <img src="./app/images/f_baritone/f_baritoneG2.png"  />;
+var f_baritoneE2 = <img src="./app/images/f_baritone/f_baritoneE2.png"  />;
+var f_baritoneF2 = <img src="./app/images/f_baritone/f_baritoneF2.png"  />;
+var f_baritoneG2 = <img src="./app/images/f_baritone/f_baritoneG2.png"  />;
+var f_baritoneA2 = <img src="./app/images/f_baritone/f_baritoneA2.png"  />;
+var f_baritoneB2 = <img src="./app/images/f_baritone/f_baritoneB2.png"  />;
+var f_baritoneC3 = <img src="./app/images/f_baritone/f_baritoneC3.png"  />;
+var f_baritoneD3 = <img src="./app/images/f_baritone/f_baritoneD3.png"  />;
+var f_baritoneE3 = <img src="./app/images/f_baritone/f_baritoneE3.png"  />;
+var f_baritoneF3 = <img src="./app/images/f_baritone/f_baritoneF3.png"  />;
+var f_baritoneG3 = <img src="./app/images/f_baritone/f_baritoneG3.png"  />;
+var f_baritoneA3 = <img src="./app/images/f_baritone/f_baritoneA3.png"  />;
+var f_baritoneB3 = <img src="./app/images/f_baritone/f_baritoneB3.png"  />;
+var f_baritoneC4 = <img src="./app/images/f_baritone/f_baritoneC4.png"  />;
+var f_baritoneD4 = <img src="./app/images/f_baritone/f_baritoneD4.png"  />;
+var f_baritoneE4 = <img src="./app/images/f_baritone/f_baritoneE4.png"  />;
+var f_baritoneF4 = <img src="./app/images/f_baritone/f_baritoneF4.png"  />;
+var f_baritoneG4 = <img src="./app/images/f_baritone/f_baritoneG4.png"  />;
+var f_baritoneA4 = <img src="./app/images/f_baritone/f_baritoneA4.png"  />;
+var f_baritoneB4 = <img src="./app/images/f_baritone/f_baritoneB4.png"  />;
+
 var bassA1 = <img src="./app/images/bass/bass_A1.png"  />;
 var bassB1 = <img src="./app/images/bass/bass_B1.png"  />;
 var bassC2 = <img src="./app/images/bass/bass_C2.png"  />;
@@ -195,11 +242,17 @@ tenorE3, tenorF3, tenorG3, tenorA3, tenorB3,
 tenorC4, tenorD4, tenorE4, tenorF4, tenorG4, tenorA4, tenorB4, tenorC5, 
 tenorD5];
 
-var cBaritone = ["c,", "d,", "e,", "f,", "g,", "a,", "b,","c","d", "e",
-"f", "g", "a", "b", "c'", "d'", "e'", "f'", "g'","a'", "b'",];
+var cBaritone = [c_baritoneC2, c_baritoneD2, c_baritoneE2, c_baritoneF2,
+c_baritoneG2, c_baritoneA2, c_baritoneB2,c_baritoneC3, c_baritoneD3, 
+c_baritoneE3, c_baritoneF3, c_baritoneG3, c_baritoneA3, c_baritoneB3, 
+c_baritoneC4, c_baritoneD4, c_baritoneE4, c_baritoneF4, c_baritoneG4, c_baritoneA4,
+c_baritoneB4];
 
-var fBaritone = ["c,", "d,", "e,", "f,", "g,", "a,", "b,","c","d", "e",
-"f", "g", "a", "b", "c'", "d'", "e'", "f'", "g'","a'", "b'",];
+var fBaritone = [f_baritoneC2, f_baritoneD2, f_baritoneE2, f_baritoneF2,
+f_baritoneG2, f_baritoneA2, f_baritoneB2,f_baritoneC3, f_baritoneD3, 
+f_baritoneE3, f_baritoneF3, f_baritoneG3, f_baritoneA3, f_baritoneB3, 
+f_baritoneC4, f_baritoneD4, f_baritoneE4, f_baritoneF4, f_baritoneG4, f_baritoneA4,
+f_baritoneB4];
 
 var bass = [bassA1, bassB1, bassC2, bassD2, bassE2, bassF2, bassG2, bassA2,
     bassB2, bassC3, bassD3, bassE3, bassF3, bassG3,
