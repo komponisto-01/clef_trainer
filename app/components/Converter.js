@@ -53,7 +53,7 @@ var sopranoD3 = <img src="./app/images/soprano/sopranoD3.png"  />;
 var sopranoE3 = <img src="./app/images/soprano/sopranoE3.png"  />;
 var sopranoF3 = <img src="./app/images/soprano/sopranoF3.png"  />;
 var sopranoG3 = <img src="./app/images/soprano/sopranoG3.png"  />;
-var sopranoA3 = <img src="./app/images/soprano/sopranoA3.png"  />;
+var sopranoA3 = <img src="./app/images/soprano/soprano_A3.png"  />;
 var sopranoB3 = <img src="./app/images/soprano/sopranoB3.png"  />;
 var sopranoC4 = <img src="./app/images/soprano/sopranoC4.png"  />;
 var sopranoD4 = <img src="./app/images/soprano/sopranoD4.png"  />;
@@ -71,6 +71,52 @@ var sopranoA5 = <img src="./app/images/soprano/sopranoA5.png"  />;
 var sopranoB5 = <img src="./app/images/soprano/sopranoB5.png"  />;
 var sopranoC6 = <img src="./app/images/soprano/sopranoC6.png"  />;
 
+var mezzo_sopranoB2 = <img src="./app/images/mezzo_soprano/mezzo_sopranoB2.png"  />;
+var mezzo_sopranoC3 = <img src="./app/images/mezzo_soprano/mezzo_sopranoC3.png"  />;
+var mezzo_sopranoD3 = <img src="./app/images/mezzo_soprano/mezzo_sopranoD3.png"  />;
+var mezzo_sopranoE3 = <img src="./app/images/mezzo_soprano/mezzo_sopranoE3.png"  />;
+var mezzo_sopranoF3 = <img src="./app/images/mezzo_soprano/mezzo_sopranoF3.png"  />;
+var mezzo_sopranoG3 = <img src="./app/images/mezzo_soprano/mezzo_sopranoG3.png"  />;
+var mezzo_sopranoA3 = <img src="./app/images/mezzo_soprano/mezzo_sopranoA3.png"  />;
+var mezzo_sopranoB3 = <img src="./app/images/mezzo_soprano/mezzo_sopranoB3.png"  />;
+var mezzo_sopranoC4 = <img src="./app/images/mezzo_soprano/mezzo_sopranoC4.png"  />;
+var mezzo_sopranoD4 = <img src="./app/images/mezzo_soprano/mezzo_sopranoD4.png"  />;
+var mezzo_sopranoE4 = <img src="./app/images/mezzo_soprano/mezzo_sopranoE4.png"  />;
+var mezzo_sopranoF4 = <img src="./app/images/mezzo_soprano/mezzo_sopranoF4.png"  />;
+var mezzo_sopranoG4 = <img src="./app/images/mezzo_soprano/mezzo_sopranoG4.png"  />;
+var mezzo_sopranoA4 = <img src="./app/images/mezzo_soprano/mezzo_sopranoA4.png"  />;
+var mezzo_sopranoB4 = <img src="./app/images/mezzo_soprano/mezzo_sopranoB4.png"  />;
+var mezzo_sopranoC5 = <img src="./app/images/mezzo_soprano/mezzo_sopranoC5.png"  />;
+var mezzo_sopranoD5 = <img src="./app/images/mezzo_soprano/mezzo_sopranoD5.png"  />;
+var mezzo_sopranoE5 = <img src="./app/images/mezzo_soprano/mezzo_sopranoE5.png"  />;
+var mezzo_sopranoF5 = <img src="./app/images/mezzo_soprano/mezzo_sopranoF5.png"  />;
+var mezzo_sopranoG5 = <img src="./app/images/mezzo_soprano/mezzo_sopranoG5.png"  />;
+var mezzo_sopranoA5 = <img src="./app/images/mezzo_soprano/mezzo_sopranoA5.png"  />;
+
+var altoG2 = <img src="./app/images/alto/altoG2.png"  />;
+var altoA2 = <img src="./app/images/alto/altoA2.png"  />;
+var altoB2 = <img src="./app/images/alto/altoB2.png"  />;
+var altoC3 = <img src="./app/images/alto/altoC3.png"  />;
+var altoD3 = <img src="./app/images/alto/altoD3.png"  />;
+var altoE3 = <img src="./app/images/alto/altoE3.png"  />;
+var altoF3 = <img src="./app/images/alto/altoF3.png"  />;
+var altoG3 = <img src="./app/images/alto/altoG3.png"  />;
+var altoA3 = <img src="./app/images/alto/altoA3.png"  />;
+var altoB3 = <img src="./app/images/alto/altoB3.png"  />;
+var altoC4 = <img src="./app/images/alto/altoC4.png"  />;
+var altoD4 = <img src="./app/images/alto/altoD4.png"  />;
+var altoE4 = <img src="./app/images/alto/altoE4.png"  />;
+var altoF4 = <img src="./app/images/alto/altoF4.png"  />;
+var altoG4 = <img src="./app/images/alto/altoG4.png"  />;
+var altoE4 = <img src="./app/images/alto/altoE4.png"  />;
+var altoF4 = <img src="./app/images/alto/altoF4.png"  />;
+var altoG4 = <img src="./app/images/alto/altoG4.png"  />;
+var altoA4 = <img src="./app/images/alto/altoA4.png"  />;
+var altoB4 = <img src="./app/images/alto/altoB4.png"  />;
+var altoC5 = <img src="./app/images/alto/altoC5.png"  />;
+var altoD5 = <img src="./app/images/alto/altoD5.png"  />;
+var altoE5 = <img src="./app/images/alto/altoE5.png"  />;
+var altoF5 = <img src="./app/images/alto/altoF5.png"  />;
 
 var bassA1 = <img src="./app/images/bass/bass_A1.png"  />;
 var bassB1 = <img src="./app/images/bass/bass_B1.png"  />;
@@ -115,11 +161,16 @@ sopranoC4, sopranoD4, sopranoE4, sopranoF4, sopranoG4, sopranoA4, sopranoB4,
 sopranoC5, sopranoD5, sopranoE5, sopranoF5, sopranoG5, sopranoA5, sopranoB5,
 sopranoC6];
 
-var mezzoSoprano = ["b,","c","d", "e", "f", "g", "a", "b", "c'", "d'", 
-"e'", "f'", "g'","a'", "b'", "c''", "d''", "e''", "f''", "g''", "a''"];
+var mezzoSoprano = [mezzo_sopranoB2, mezzo_sopranoC3, mezzo_sopranoD3, 
+mezzo_sopranoE3, mezzo_sopranoF3, mezzo_sopranoG3, mezzo_sopranoA3,
+mezzo_sopranoB3, mezzo_sopranoC4, mezzo_sopranoD4, 
+mezzo_sopranoE4, mezzo_sopranoF4, mezzo_sopranoG4,mezzo_sopranoA4,
+mezzo_sopranoB4, mezzo_sopranoC5, mezzo_sopranoD5, mezzo_sopranoE5,
+mezzo_sopranoF5, mezzo_sopranoG5, mezzo_sopranoA5];
 
-var alto = ["g,", "a,", "b,","c","d", "e", "f", "g", "a", "b", "c'", "d'", 
-"e'", "f'", "g'","a'", "b'", "c''", "d''", "e''", "f''"];
+var alto = [altoG2, altoA2, altoB2, altoC3, altoD3 , altoE3, altoF3, altoG3,
+altoA3, altoB3, altoC4, altoD4, 
+altoE4, altoF4, altoG4, altoA4, altoB4, altoC5, altoD5, altoE5, altoF5];
 
 var tenor = ["e,", "f,", "g,", "a,", "b,","c","d", "e", "f", "g", "a", "b",
 "c'", "d'", "e'", "f'", "g'","a'", "b'", "c''", "d''"];
