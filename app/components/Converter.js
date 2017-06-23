@@ -229,7 +229,6 @@ var subbassE4 = <img src="./app/images/subbass/subbassE4.png"  />;
 
 // Clefs are arrays of pitches: they take an integer (representing staff
 // position) and output a pitch.
-// (The entries representing pitches will be replaced by images to be rendered.)
 
 var frenchViolin = [french_violinA3, french_violinB3, french_violinC4,
 french_violinD4, french_violinE4, french_violinF4, french_violinG4,
