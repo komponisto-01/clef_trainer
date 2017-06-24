@@ -3,10 +3,15 @@
     <head>
         <meta charset="UTF-8">
         <title>Clef Trainer</title>
+        <link rel="stylesheet" href="app/style.css" type="text/css" />
     </head>
     <body>
         <div id="app">
-            <div id="selector"> </div>
+            <div id="selector"> 
+
+            </div>
+            <div id="target_selector"></div>
+            <div id="known_selector"></div>
             <div id="target_dropdown1"></div>
             <div id="target_dropdown2"></div>
             <div id="target_dropdown3"></div>
@@ -35,5 +40,35 @@
             <div id="conversion_display"></div>
             <div id="conversion_button"></div>
         </div>
+<div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="#">Link 1</a>
+    <a href="#">Link 2</a>
+    <a href="#">Link 3</a>
+  </div>
+</div>
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
     </body>
 </html>

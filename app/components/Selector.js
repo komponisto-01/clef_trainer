@@ -89,6 +89,48 @@ function renderConverter(){
 }
 
 function displayMenu(){
+    ReactDOM.render(<Button onClick={displayTargetMenu}/>, 
+    document.getElementById('target_selector')
+    );
+    ReactDOM.render(<Button onClick={displayKnownMenu}/>,
+    document.getElementById('known_selector')
+    );
+}
+
+function displayTargetMenu(){
+    ReactDOM.render(<a href="#" onClick={targetFrenchViolin}>targetFrenchViolin
+    </a>, document.getElementById('target_dropdown1')
+    );
+    ReactDOM.render(<a href="#" onClick={targetTreble}>targetTreble</a>,
+    document.getElementById('target_dropdown2')
+    );
+    ReactDOM.render(<a href="#" onClick={targetSoprano}>targetSoprano</a>,
+    document.getElementById('target_dropdown3')
+    );
+    ReactDOM.render(<a href="#" onClick={targetMezzoSoprano}>targetMezzoSoprano</a>,
+    document.getElementById('target_dropdown4')
+    );
+    ReactDOM.render(<a href="#" onClick={targetAlto}>targetAlto</a>,
+    document.getElementById('target_dropdown5')
+    );
+    ReactDOM.render(<a href="#" onClick={targetTenor}>targetTenor</a>,
+    document.getElementById('target_dropdown6')
+    );
+    ReactDOM.render(<a href="#" onClick={targetCBaritone}>targetCBaritone</a>,
+    document.getElementById('target_dropdown7')
+    );    
+    ReactDOM.render(<a href="#" onClick={targetFBaritone}>targetFBaritone</a>,
+    document.getElementById('target_dropdown8')
+    );    
+    ReactDOM.render(<a href="#" onClick={targetBass}>targetBass</a>,
+    document.getElementById('target_dropdown9')
+    );
+    ReactDOM.render(<a href="#" onClick={targetSubBass}>targetSubBass</a>,
+    document.getElementById('target_dropdown10')
+    );
+}
+
+function displayKnownMenu(){
     ReactDOM.render(<a href="#" onClick={targetFrenchViolin}>targetFrenchViolin
     </a>, document.getElementById('target_dropdown1')
     );
@@ -148,8 +190,10 @@ function displayMenu(){
     );
     ReactDOM.render(<a href="#" onClick={knownSubBass}>knownSubBass</a>,
     document.getElementById('known_dropdown10')
-    );
+    ); 
 }
+
+
 
 function Selector(props){
     return <Button onClick={displayMenu} />;
