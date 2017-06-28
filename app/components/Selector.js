@@ -9,34 +9,44 @@ var known;
 
 function targetFrenchViolin(){
     target = 'frenchViolin';
+    renderConverter();
 }
 function targetTreble(){
     target = 'treble';
+    renderConverter();
 }
 function targetSoprano(){
     target = 'soprano';
+    renderConverter();
 }
 function targetMezzoSoprano(){
     target = 'mezzoSoprano';
+    renderConverter();
 }
 function targetAlto(){
     target = 'alto';
+    renderConverter();
 }
 function targetTenor(){
     target = 'tenor';
+    renderConverter();
 }
 function targetCBaritone(){
     target = 'cBaritone';
+    renderConverter();
 }
 function targetFBaritone(){
     target = 'fBaritone';
+    renderConverter();
 }
 function targetBass(){
     target = 'bass';
-    alert("target = bass");
+    renderConverter();
+
 }
 function targetSubBass(){
     target = 'subBass';
+    renderConverter();
 }
 
 function knownFrenchViolin(){
@@ -45,7 +55,6 @@ function knownFrenchViolin(){
 }
 function knownTreble(){
     known = 'treble';
-    alert("known = treble");
     renderConverter();
 }
 function knownSoprano(){
@@ -82,27 +91,30 @@ function knownSubBass(){
 }
 
 function renderConverter(){
+   if (!(typeof known === "undefined")){
     ReactDOM.render(
         <Converter known={known} target={target} />,
         document.getElementById('converter')
-        );
+        );}
 }
 
+
 function displayMenu(){
-    ReactDOM.render(<Button onClick={displayTargetMenu}/>, 
+    
+    ReactDOM.render(<Button onClick={displayTargetMenu} class="dropbtn"/>, 
     document.getElementById('target_selector')
     );
-    ReactDOM.render(<Button onClick={displayKnownMenu}/>,
+    
+    ReactDOM.render(<Button onClick={displayKnownMenu} class="dropbtn"/>,
     document.getElementById('known_selector')
     );
 }
 
+
 function displayTargetMenu(){
-    // document.getElementById("somediv").innerHTML = "text!";
-    // document.getElementById("myDropdown").innerHTML = "text!";
     
     document.getElementById("target_list").classList.toggle("show");
-   
+    
     ReactDOM.render(<a href="#" onClick={targetFrenchViolin}>targetFrenchViolin
     </a>, document.getElementById('target_dropdown1')
     );
@@ -137,6 +149,7 @@ function displayTargetMenu(){
 
 function displayKnownMenu(){
     document.getElementById("known_list").classList.toggle("show");
+    
     ReactDOM.render(<a href="#" onClick={knownFrenchViolin}>knownFrenchViolin</a>,
     document.getElementById('known_dropdown1')
     );

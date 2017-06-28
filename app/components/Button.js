@@ -3,7 +3,7 @@ var ReactDOM = require('react-dom');
 
 
 function Button(props){
-    return <button type="button" onClick={props.onClick}>Click Me!</button>;
+    return <button type="button" onClick={props.onClick} className={props.class}>Click Me!</button>;
 }
     
 module.exports = Button;
