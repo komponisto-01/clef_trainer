@@ -472,11 +472,11 @@ function Converter(props){
     }
     //The get-position button subcomponent:
     function PositionButton(props){
-        return <Button onClick={displayRandomPosition} />;
+        return <Button onClick={displayRandomPosition} text="Get Note" />;
     }
     //The convert button subcomponent:
     function ConvertButton(props){
-        return <Button onClick={convert} />;
+        return <Button onClick={convert} text="Convert" />;
     }    
         return <div>
         <PositionButton /> 
